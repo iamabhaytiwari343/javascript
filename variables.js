@@ -76,3 +76,7 @@ var carName1;
 let $ = "Hello World";
 let $$$ = 2;
 let $myMoney = 5;
+//javaScript treats underscore as a letter, identifiers containing _ are valid variable names:
+let _lastName = "Johnson";
+let _x = 2;
+let _100 = 5;
