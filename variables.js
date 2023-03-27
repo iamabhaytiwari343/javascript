@@ -65,3 +65,10 @@ console.log(person)
 let e;
 //gives the output undefined
 console.log(e)
+//If you re-declare a JavaScript variable declared with var, it will not lose its value.
+
+//The variable carName will still have the value "Volvo" after the execution of these statements:
+var carName1 = "Volvo";
+var carName1;
+//You cannot re-declare a variable declared with let or const.
+
