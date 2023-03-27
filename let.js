@@ -9,37 +9,13 @@ Variables defined with let must be declared before use.
 
 Variables defined with let have block scope.
 */
-let x = "John Doe";
-//not possible with let
-//let x = 0;
-{
-    let y = 2;
-  }
-  // x can NOT be used here
-  console.log(y)
+let x=20
+//again let x=30 is not possible
+console.log(x)
+//with var it is possible
+var x1=30
+console.log(x1)
+// redeclare
+var x2=30
+console.log(x2)
 
-  //Redeclaring a variable using the var keyword can impose problems.
-
-//Redeclaring a variable inside a block will also redeclare the variable outside the block:
-var x = 10;
-// Here x is 10
-
-{
-var x = 2;
-// Here x is 2
-}
-
-// Here x is 2
-/* Redeclaring a variable using the let keyword can solve this problem.
-
-Redeclaring a variable inside a block will not redeclare the variable outside the block:
- */
-let x = 10;
-// Here x is 10
-
-{
-let x = 2;
-// Here x is 2
-}
-
-// Here x is 10
