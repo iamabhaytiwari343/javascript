@@ -34,3 +34,21 @@ console.log(x1+y1)
 var x2=20
 var y2=80
 console.log(x2+y2)
+/*
+Always declare JavaScript variables with var,let, orconst.
+
+The var keyword is used in all JavaScript code from 1995 to 2015.
+
+The let and const keywords were added to JavaScript in 2015.
+
+If you want your code to run in older browsers, you must use var.
+*/
+/*
+If you want a general rule: always declare variables with const.
+
+If you think the value of the variable can change, use let.
+*/
+const price1 = 5;
+const price2 = 6;
+let total = price1 + price2;
+console.log(total)
