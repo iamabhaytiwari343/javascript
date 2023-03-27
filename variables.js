@@ -52,3 +52,16 @@ const price1 = 5;
 const price2 = 6;
 let total = price1 + price2;
 console.log(total)
+//one statement many variable
+let person = "John Doe", carName = "Volvo", price = 200;
+console.log(person)
+// let person = "John Doe",
+// carName = "Volvo",
+// price = 200;
+
+//variables are often declared without a value. The value can be something that has to be calculated, or something that will be provided later, like user input.
+
+//A variable declared without a value will have the value undefined.
+let e;
+//gives the output undefined
+console.log(e)
