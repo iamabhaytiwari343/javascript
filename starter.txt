@@ -10,3 +10,4 @@ Any text between /* and */ will be ignored by JavaScript.
 
 just like Java
 
+MDN WEB DOCS
