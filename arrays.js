@@ -45,3 +45,16 @@ fruits5[6] = "Lemon";  // Creates undefined "holes" in fruits
 // const fruits = ["Banana", "Orange", "Apple"];
 
 // fruits instanceof Array;
+//joining the array elemenet 
+console.log(fruits3.toString());
+// joining the array element in the array 
+console.log(fruits3.join());
+//When you work with arrays, it is easy to remove elements and add new elements.
+//pops the last element and returns it
+console.log(fruits3.pop());
+//returns the no. of  element in the array
+console.log(fruits3.push("lemon"));
+
+console.log(fruits3);
+
+
