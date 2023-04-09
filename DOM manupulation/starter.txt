@@ -1,0 +1,17 @@
+to create an interactive web application that modifies content and elements on the application as as users interact with it.You can achieve this by changing the webpage dynamically.
+
+DOM Manipulation is the process of changing the content and structure of the DOM (document object model). The DOM can be modified by adding, removing, or modifying elements and their attributes.
+
+JavaScript DOM manipulation includes any of the following:
+
+Creating a new element
+Attaching/appending a new element to the DOM
+Removing an old element from the DOM
+Replacing an element with another element
+Changing the location of the element in the document
+Making changes in existing elements by adding style or by adding content
+Adding a new attribute to the element
+Removing an attribute from the element
+Changing the value of an attribute
+Changing the events on the DOM
+
