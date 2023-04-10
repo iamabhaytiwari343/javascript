@@ -18,3 +18,13 @@ Add an event listener to the table.
     How can you change the value of a form element using JavaScript?
     How can you change the source of an image element using JavaScript?
 
+    How can you dynamically create a table with rows and columns using JavaScript?
+    How can you implement a dropdown menu using JavaScript and CSS?
+    How can you dynamically create and display a modal window using JavaScript?
+    How can you implement a pagination feature using JavaScript and CSS?
+    How can you implement a search functionality on a page using JavaScript and HTML input elements?
+    How can you dynamically update the content of a webpage using AJAX and JavaScript?
+    How can you create a drag-and-drop functionality using JavaScript and HTML5 APIs?
+    How can you implement a slideshow or carousel using JavaScript and CSS?
+    How can you implement a responsive navigation menu using JavaScript and CSS?
+    How can you implement a form validation using JavaScript and regular expressions?
