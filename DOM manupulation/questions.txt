@@ -1,0 +1,20 @@
+Here are some practice problems to practice DOM manipulation.
+
+Create a table element and add it to the body.
+Create a table row element and add it to the table.
+Remove 2nd row from the table.
+Add a class attribute to the table row.
+Replace 3rd row with a new row.
+Add an event listener to the table.
+
+    How can you change the text of an HTML element using JavaScript?
+    How can you change the background color of an HTML element using JavaScript?
+    How can you add a new HTML element to the DOM using JavaScript?
+    How can you remove an HTML element from the DOM using JavaScript?
+    How can you add an event listener to an HTML element using JavaScript?
+    How can you access the attributes of an HTML element using JavaScript?
+    How can you modify the CSS styles of an HTML element using JavaScript?
+    How can you create a new HTML element with attributes using JavaScript?
+    How can you change the value of a form element using JavaScript?
+    How can you change the source of an image element using JavaScript?
+
