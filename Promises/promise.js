@@ -22,3 +22,5 @@ Rejected: operation failed.
 
 // This lets asynchronous methods return values like synchronous methods: instead of immediately returning the final value, the asynchronous method returns a promise to supply the value at some point in the future.
 
+// Using ‘Then’ (Promise Chaining)
+// To take several asynchronous calls and synchronize them one after the other, you can use promise chaining. This allows using a value from the first promise in later subsequent callbacks.
