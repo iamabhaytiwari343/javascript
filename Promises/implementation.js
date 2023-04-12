@@ -30,3 +30,27 @@ Let’s move on to the definition of doResolve and see how it’s implemented.
 
 
 */
+
+function handle(self, deferred) {
+  while (self._state === 3) {
+    self = self._value;
+  }
+  if (Promise._onHandle) {
+    Promise._onHandle(self);
+  }
+  if (self._state === 0) {
+     if (self._deferredState === 0) {
+         self._deferredState = 1;
+         self._deferreds = deferred;
+         return;
+    }
+    if (self._deferredState === 1) {
+       self._deferredState = 2;
+       self._deferreds = [self._deferreds, deferred];
+       return;
+    }
+    self._deferreds.push(deferred);
+    return;
+ }
+   handleResolved(self, deferred);
+}
