@@ -24,3 +24,78 @@ Rejected: operation failed.
 
 // Using ‘Then’ (Promise Chaining)
 // To take several asynchronous calls and synchronize them one after the other, you can use promise chaining. This allows using a value from the first promise in later subsequent callbacks.
+
+Promise.resolve('some')
+  .then(function(string) { // <-- This will happen after the above Promise resolves (returning the value 'some')
+    return new Promise(function(resolve, reject) {
+      setTimeout(function() {
+        string += 'thing';
+        resolve(string);
+      }, 1);
+    });
+  })
+  .then(function(string) { // <-- This will happen after the above .then's new Promise resolves
+    console.log(string); // <-- Logs 'something' to the console
+  });
+
+/*
+Promise API
+There are 4 static methods in the Promise class:
+
+Promise.resolve
+Promise.reject
+Promise.all
+Promise.race
+
+Promises can be chained together
+When writing Promises to solve a particular problem, you can chain them together to form logic.
+*/
+
+var add = function(x, y) {
+  return new Promise((resolve,reject) => {
+    var sum = x + y;
+    if (sum) {
+      resolve(sum);
+    }
+    else {
+      reject(Error("Could not add the two values!"));
+    }
+  });
+};
+
+var subtract = function(x, y) {
+  return new Promise((resolve, reject) => {
+    var sum = x - y;
+    if (sum) {
+      resolve(sum);
+    }
+    else {
+      reject(Error("Could not subtract the two values!"));
+    }
+  });
+};
+
+// Starting promise chain
+add(2,2)
+  .then((added) => {
+    // added = 4
+    return subtract(added, 3);
+  })
+  .then((subtracted) => {
+    // subtracted = 1
+    return add(subtracted, 5);
+  })
+  .then((added) => {
+    // added = 6
+    return added * 2;    
+  })
+  .then((result) => {
+    // result = 12
+    console.log("My result is ", result);
+  })
+  .catch((err) => {
+    // If any part of the chain is rejected, print the error message.
+    console.log(err);
+  });
+
+
