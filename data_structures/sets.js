@@ -13,3 +13,5 @@ var set3 = new Set([10, 20, 30, 30, 40, 40]);
   
  // it is an  empty set
 var set4 = new Set();
+
+console.log(set1)
