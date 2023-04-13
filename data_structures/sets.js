@@ -15,3 +15,10 @@ var set3 = new Set([10, 20, 30, 30, 40, 40]);
 var set4 = new Set();
 
 console.log(set1)
+//Properties: 
+
+//Set.size – It returns the number of elements in the Set.
+
+//Methods of Set: 
+
+//Set.add() – It adds the new element with a specified value at the end of the Set object.
