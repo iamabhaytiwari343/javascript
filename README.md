@@ -1,4 +1,6 @@
 # javascript
-navigate in the repo to learn javascript fundamentals acoording to the following roadmap
 
-https://roadmap.sh/javascript
+refer to: https://roadmap.sh/javascript
+
+what are promises ? what are its uses?
+
