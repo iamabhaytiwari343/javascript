@@ -125,3 +125,51 @@ promise
 Promises, along with their then, catch, and finally methods, provide a structured way to work with asynchronous operations in JavaScript, making it easier to handle both successful results and errors.
 
 Please let me know if you would like more details on any specific aspect or have additional questions.
+
+### Promise.all and Promise.race
+
+Promise.all and Promise.race are two methods for handling multiple promises in JavaScript. They are useful when you have several asynchronous tasks that need to be coordinated or when you want to deal with the first result among several promises.
+
+#### Promise.all
+- Promise.all takes an array of promises as input and returns a new promise.
+- This new promise resolves when all the input promises have resolved or rejects as soon as any one of them rejects.
+- It returns an array of resolved values corresponding to the input promises in the same order.
+
+```
+const promise1 = fetch('https://api.example.com/data1');
+const promise2 = fetch('https://api.example.com/data2');
+
+Promise.all([promise1, promise2])
+  .then((results) => {
+    console.log('All promises resolved:', results);
+  })
+  .catch((error) => {
+    console.error('At least one promise rejected:', error);
+  });
+
+
+```
+#### Promise.race
+
+- Promise.race also takes an array of promises as input and returns a new promise.
+- This new promise resolves or rejects as soon as the first promise in the input array resolves or rejects. It doesn't wait for all promises to complete.
+
+```
+const promise1 = fetch('https://api.example.com/data1');
+const promise2 = fetch('https://api.example.com/data2');
+
+Promise.race([promise1, promise2])
+  .then((result) => {
+    console.log('The first promise to resolve:', result);
+  })
+  .catch((error) => {
+    console.error('The first promise to reject:', error);
+  });
+
+
+```
+
+In the case of Promise.all, you ensure that all promises have completed successfully, and you get an array of their results. In the case of Promise.race, you get the result (or error) of the first promise to resolve or reject. These methods are handy for scenarios where you need to coordinate multiple asynchronous operations.
+
+### Handling Async Operations
+
