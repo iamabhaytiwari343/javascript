@@ -173,3 +173,66 @@ In the case of Promise.all, you ensure that all promises have completed successf
 
 ### Handling Async Operations
 
+Handling asynchronous operations in JavaScript involves working with promises and other asynchronous patterns to ensure that your code doesn't block and remains responsive to other tasks.
+
+#### Using Promises
+
+Promises are a way to manage asynchronous operations in a more structured and readable manner. You can create a promise and specify what should happen when the operation is complete (resolved) or encounters an error (rejected).
+
+```
+const fetchData = () => {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      // Simulate data retrieval
+      const data = 'Some data';
+      resolve(data); // Resolve with the data
+    }, 1000);
+  });
+};
+
+fetchData()
+  .then((data) => {
+    console.log('Data received:', data);
+  })
+  .catch((error) => {
+    console.error('Error:', error);
+  });
+
+
+```
+#### Async/Await
+Async/await is a more recent addition to JavaScript that simplifies working with promises. It allows you to write asynchronous code in a more synchronous-like fashion, making it easier to read and maintain.
+
+```
+const fetchData = async () => {
+  try {
+    const data = await fetch('https://api.example.com/data');
+    console.log('Data received:', data);
+  } catch (error) {
+    console.error('Error:', error);
+  }
+};
+
+fetchData();
+
+
+```
+
+#### CallBacks
+
+Callbacks are a traditional way to handle asynchronous operations. You pass a function (the callback) that should be executed when the operation is complete. However, this can lead to callback hell or deeply nested functions when dealing with multiple async tasks.
+
+```
+const fetchData = (callback) => {
+  setTimeout(() => {
+    const data = 'Some data';
+    callback(data);
+  }, 1000);
+};
+
+fetchData((data) => {
+  console.log('Data received:', data);
+});
+
+
+```
